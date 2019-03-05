@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Урок 5. Введение в DOM. ДЗ</h1>
+    <section class="task-1">
+        <h2>1. Есть кнопка button рядом с ней есть текст (Hello) необходимо при нажатии на кнопку поменять текст кнопки на (Привет)</h2>
+        <button class="task-1__btn" onclick="changeSpan()">click me</button>
+        <span class="task-1__text">Hello</span>
+    </section>
+    <section class="task-2">
+        <h2>2. Есть кнопка button рядом с ней есть тэг b> (Hello) необходимо при нажатии на кнопку поменять тэг на h3</h2>
+        <button class="task-2__btn" onclick="changeTag()">click me</button>
+        <b class="task-2__text">Hello</b>
+    </section>
+    <section class="task-3">
+        <h2>3. Дан код (заголовок 2, ниже - ul (в нем 4 li пустых). Поменяйте содержимое списка на текст list их порядковый номер в коде.</h2>
+        <h2>Заголовок</h2>
+        <ul class="task-3__list">
+            <li class="task-3__list__chld"></li>
+            <li class="task-3__list__chld"></li>
+            <li class="task-3__list__chld"></li>
+            <li class="task-3__list__chld"></li>
+        </ul>
+    </section>
+    <section class="task-4">
+        <h2>4. Создаем калькулятор</h2>
+        <input type="text" name="task-4__first-num"> 
+        <span>?</span>
+        <input type="text" name="task-4__second-num"> 
+        =
+        <span id="task-4__result">результат</span>
+        
+        <div class="task-4__button-box">
+            <button class="task-4__button-box__sum" onclick="mathFuncSum()">'+'</button>
+            <button class="task-4__button-box__subtract" onclick="mathFuncSubtract()">'-'</button>
+            <button class="task-4__button-box__multiply"onclick="mathFuncMultiply()">'*'</button>
+            <button class="task-4__button-box__division"onclick="mathFuncDivision()">'/'</button>
+        </div>
+    </section>
+    <section class="task-5">
+        <h2>5. Дан элемент ul, а в нем li #list. Вставьте перед элементом #list новую li с текстом 'Первый элемент списка'</h2>
+        <ul class="task-5__ul">
+            <li class="task-5__ul__li" id="list"></li>
+        </ul>
+    </section>
+
+    
+    <script src="code_task_1.js"></script>
+    <script src="code_task_2.js"></script>
+    <script src="code_task_3.js"></script>
+    <script src="code_task_4.js"></script>
+    <script src="code_task_5.js"></script>
+</body>
+</html>
